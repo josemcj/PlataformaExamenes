@@ -1,0 +1,142 @@
+@use "variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: v.$fuente;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: v.$negro;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 90rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.conjunto-botones {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+  
+    i {
+        padding: 0;
+    }
+  }
+  
+.centrar-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Botones
+.btn {
+    background-color: v.$blanco;
+    color: v.$negro;
+    font-weight: v.$bold;
+    padding: 1.5rem 2.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background-color: v.$amarillo;
+    }
+}
+
+.btn-principal {
+    background-color: v.$verde;
+    color: v.$blanco;
+    border: 0.1rem solid v.$transparente;
+
+    &:hover {
+        color: v.$negro;
+        background-color: v.$amarillo;
+        border: 0.1rem solid v.$negro;
+    }
+}
+
+.btn-secundario {
+    background-color: v.$amarillo;
+    border: 0.1rem solid v.$transparente;
+    
+    &:hover {
+        background-color: v.$blanco;
+        border: 0.1rem solid v.$negro;
+    }
+}
+
+.btn-responder-examen {
+    color: v.$verde;
+    background-color: v.$grisback;
+    padding: 1rem 2rem;
+    font-weight: v.$bold;
+    transition: .3s all ease;
+
+    &:hover {
+        background-color: v.$grisOscuro;
+    }
+}
+
+.btn-subrayado {
+    color: v.$negro;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    background-color: v.$transparente;
+    border: none;
+    border-bottom: 0.1rem solid v.$negro;
+    transition: .3s all ease;
+  
+    &:hover {
+        color: v.$grisHover;
+        border-bottom-color: v.$grisHover;
+    }
+}
+
+.no-mg {
+    margin: 0;
+}
+
+// Guia
+.guia {
+    outline: v.$guia;
+}

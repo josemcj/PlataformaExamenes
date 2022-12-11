@@ -1,0 +1,37 @@
+@use "base/variables" as v;
+
+header {
+    background-color: v.$verde;
+    padding: 8rem 0;
+    margin-bottom: 3rem;
+
+    .titulo-pagina {
+        font-size: 6rem;
+        font-weight: v.$extrabold;
+        color: v.$blanco;
+        margin: 0 0 3.5rem 0;
+    }
+
+    .btn-subrayado {
+        color: v.$blanco;
+        border-bottom-color: v.$blanco;
+
+        &:hover {
+            color: v.$gris;
+            border-bottom-color: v.$gris;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+
+    .usuario {
+        color: v.$blanco;
+        margin-right: 2.5rem;
+    }
+}

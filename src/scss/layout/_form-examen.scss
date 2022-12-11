@@ -1,0 +1,97 @@
+@use 'base/variables' as v;
+
+.form_examen {
+    width: min(90%, 90rem);
+    padding: 3rem;
+
+    .intrucciones-examen {
+        font-size: 2rem;
+        font-weight: v.$extrabold;
+        margin: 0;
+    }
+
+    .separador {
+        border: none;
+        background-color: v.$grisOscuro;
+        height: .1rem;
+        margin: 2.5rem 0;
+    }
+}
+
+.form_grupo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    input, select {
+        outline: 0.1rem solid v.$grisInput;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        border: none;
+        transition: .3s all ease;
+
+        &:focus {
+            outline: 0.1rem solid v.$grisOutline;
+        }
+    }
+
+    .form_title {
+        width: 100%;
+    }
+}
+
+.form_grupo-pregunta {
+    flex-direction: column;
+    margin: 2rem 0 4rem 0;
+
+    .fila {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2rem;
+    }
+}
+
+.numero-pregunta {
+    font-weight: v.$bold;
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    background-color: v.$amarillo;
+}
+
+.opcion-correcta {
+    text-align: end;
+}
+
+.pregunta {
+    width: 85%;
+}
+
+// Opciones
+.input-opciones {
+    width: 100%;
+    flex-direction: row;
+    margin-left: 5.5rem;
+
+    .opcion {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-weight: v.$bold;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+.btn-examen {
+    width: 100%;
+}
