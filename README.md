@@ -16,7 +16,7 @@ https://youtu.be/-qjY6ueHYEE
 ## ¿Cómo funciona el proyecto?
 
 La base de datos ya tiene registrados dos usuarios: un usuario administrador y un usuario alumno.
-Inicia sesión con los siguientes datos de acceso:
+Pruebalo tú mismo desde el [siguiente enlace](https://josemcj.000webhostapp.com/examenes) e inicia sesión con los siguientes datos de acceso:
 
 **Administrador**
 - Correo electrónico: `admin@mail.com`
