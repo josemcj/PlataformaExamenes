@@ -18,7 +18,7 @@ function get_header() {
  */
 function estaAutenticado() {
     session_start();
-    $auth = $_SESSION['login'];
+    $auth = isset($_SESSION['login']) ? $_SESSION['login'] : false;
 
     if (!$auth) {
         header('Location: /login.php');
