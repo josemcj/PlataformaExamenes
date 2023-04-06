@@ -29,7 +29,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
     $usuario = $_POST['usuario'];
     $email = $_POST['email'];
 
-    if ( isset($_POST['contrasena']) ) {
+    if ( !empty($_POST['contrasena']) ) {
         $contrasena = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
 
         $query = "UPDATE usuarios SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', usuario='$usuario', email='$email', contrasena='$contrasena' WHERE id = $id";
